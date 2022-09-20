@@ -17,20 +17,27 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp">
+
         <ImageView
+            android:id="@+id/image"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@color/design_default_color_primary_variant"
-            android:contentDescription="@string/image" />
+            android:contentDescription="@string/image"
+            android:src="@drawable/food" />
     </RelativeLayout>
 
     <TextView
         android:textSize="24sp"
-        android:name="@string/description"
+        android:text="@string/descriptionDetail"
         android:id="@+id/tv_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-
+    <TextView
+        android:textSize="24sp"
+        android:text="@string/priceDetail"
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

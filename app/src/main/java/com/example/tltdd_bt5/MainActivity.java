@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -30,39 +31,34 @@ public class MainActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.list_view);
         listView.setAdapter(itemsAdapter);
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent detail = new Intent(MainActivity.this, Detail.class);
-                startActivity(detail);
-            }
+        listView.setOnItemClickListener((adapterView, view, i, l) -> {
+            Intent detail = new Intent(MainActivity.this, Detail.class);
+            detail.putExtra("key", String.valueOf(itemsAdapter.getItem(i)));
+            MainActivity.this.startActivity(detail);
         });
 
-       listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-                AlertDialog.Builder adb = new AlertDialog.Builder(adapterView.getContext());
-                //adb.setView(Main.this);
-                adb.setTitle("Bạn có chắc muốn xóa " + items[i] + "?");
-                adb.setIcon(android.R.drawable.ic_dialog_alert);
-                adb.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        itemsAdapter.removeItem(i);
-                        listView.setAdapter(itemsAdapter);
-                        Toast.makeText(getApplicationContext(), "Đã xóa thành công!", Toast.LENGTH_LONG).show();
-                    } });
+       listView.setOnItemLongClickListener((adapterView, view, i, l) -> {
+           AlertDialog.Builder adb = new AlertDialog.Builder(adapterView.getContext());
+           //adb.setView(Main.this);
+           adb.setTitle("Bạn có chắc muốn xóa " + items[i] + "?");
+           adb.setIcon(android.R.drawable.ic_dialog_alert);
+           adb.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+               public void onClick(DialogInterface dialog, int which) {
+                   itemsAdapter.removeItem(i);
+                   listView.setAdapter(itemsAdapter);
+                   Toast.makeText(getApplicationContext(), "Đã xóa thành công!", Toast.LENGTH_LONG).show();
 
-                adb.setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        //Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG).show();
-                        //finish();
-                    } });
+               } });
 
-                AlertDialog alertDialog = adb.create();
-                alertDialog.show();
-                return true;
-            }
-        });
+           adb.setNegativeButton("No", (dialog, which) -> {
+               //Toast.makeText(getApplicationContext(), "", Toast.LENGTH_LONG).show();
+               //finish();
+           });
+
+           AlertDialog alertDialog = adb.create();
+           alertDialog.show();
+           return true;
+       });
 
     }
 }
