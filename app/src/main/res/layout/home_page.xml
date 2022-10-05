@@ -67,23 +67,27 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/list_view_button"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_margin="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toEndOf="@id/profile_button"
             android:gravity="center"
-            android:orientation="vertical"
-            android:layout_toEndOf="@id/profile_button">
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_margin="10dp"
-                android:src="@drawable/ic_list_view_24"/>
+                android:src="@drawable/ic_list_view_24" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Listview"/>
+                android:text="Listview" />
 
         </LinearLayout>
 

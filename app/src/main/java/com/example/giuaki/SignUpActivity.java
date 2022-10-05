@@ -30,7 +30,7 @@ public class SignUpActivity extends AppCompatActivity {
 
         signIn = (TextView) findViewById(R.id.sign_in_link);
 
-        signUp.setOnClickListener(new View.OnClickListener() {
+        signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent signInPage = new Intent(SignUpActivity.this, SignInActivity.class);
