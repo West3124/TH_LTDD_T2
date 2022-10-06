@@ -5,7 +5,19 @@
       <map>
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/circle.xml" value="0.27" />
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/circle_image.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_account_circle_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_baseline_phone_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_baseline_security_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_birthday_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_exit_to_app_24.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_launcher_background.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/ic_list_view_24.xml" value="0.27" />
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/image.xml" value="0.27" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/drawable/tech_color.xml" value="0.27" />
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/layout-w1240dp/activity_sign_in.xml" value="0.5" />
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/layout-w936dp/activity_sign_in.xml" value="0.5" />
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/layout/activity_main.xml" value="0.3482789855072464" />
@@ -17,7 +29,7 @@
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/layout/profile.xml" value="0.33" />
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/layout/sign_in_activity.xml" value="0.358695652173913" />
         <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/layout/sign_in_main.xml" value="0.223731884057971" />
-        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/layout/sign_up_activity.xml" value="0.1" />
+        <entry key="..\:/homework/AndroidStudio/GiuaKi/app/src/main/res/layout/sign_up_activity.xml" value="0.33" />
       </map>
     </option>
   </component>
