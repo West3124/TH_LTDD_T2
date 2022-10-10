@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GiuaKi</string>
+    <string name="sign_up_link"><u>Sign up</u> </string>
+    <string name="sign_in_link"><u> Sign in</u></string>
 </resources>

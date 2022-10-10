@@ -55,7 +55,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Edit" />
+                        android:text="5 Work Left" />
 
                 </LinearLayout>
 
@@ -75,7 +75,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Security" />
+                        android:text="Level 4" />
 
                 </LinearLayout>
 
@@ -129,7 +129,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/full_name_icon"
-                        android:text="Full name"
+                        android:text="Jack Bright"
                         android:textSize="24sp" />
                 </RelativeLayout>
 
@@ -151,7 +151,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/birthday_icon"
-                        android:text="Birthday"
+                        android:text="16/11/2002"
                         android:textSize="24sp" />
                 </RelativeLayout>
 
@@ -173,7 +173,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/email_icon"
-                        android:text="Email"
+                        android:text="*******@site19.scpf.gov"
                         android:textSize="24sp" />
                 </RelativeLayout>
 
@@ -195,7 +195,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/phone_number_icon"
-                        android:text="Phone number"
+                        android:text="0123-456-789"
                         android:textSize="24sp" />
                 </RelativeLayout>
 
@@ -217,7 +217,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/hobby_icon"
-                        android:text="Hobby"
+                        android:text="Married"
                         android:textSize="24sp" />
                 </RelativeLayout>
 

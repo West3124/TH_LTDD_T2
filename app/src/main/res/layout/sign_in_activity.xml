@@ -37,15 +37,20 @@
                 android:id="@+id/username_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Username"
-                android:layout_margin="10dp"
-                android:layout_alignParentStart="true"/>
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Username" />
 
             <EditText
+                android:id="@+id/txt_username"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/white" />
 
         </RelativeLayout>
 
@@ -63,10 +68,13 @@
                 android:layout_alignParentStart="true"/>
 
             <EditText
+                android:id="@+id/txt_password"
+                android:textColor="@color/white"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="10dp"/>
+                android:layout_marginEnd="10dp"
+                android:inputType="textPassword"/>
 
         </RelativeLayout>
 
@@ -102,7 +110,8 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/sign_up_hint"
                 android:paddingStart="10dp"
-                android:text="Sign up" />
+                android:textColor="@color/orange"
+                android:text="@string/sign_up_link" />
 
         </RelativeLayout>
     </LinearLayout>

@@ -41,6 +41,7 @@
                 android:padding="10dp">
 
                 <EditText
+                    android:textColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
@@ -55,11 +56,13 @@
                 android:padding="10dp">
 
                 <EditText
+                    android:id="@+id/edtUsername"
+                    android:textColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Username"
                     android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp"/>
+                    android:layout_marginEnd="30dp"
+                    android:hint="Username" />
 
             </RelativeLayout>
 
@@ -69,11 +72,12 @@
                 android:padding="10dp">
 
                 <EditText
+                    android:textColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
                     android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
+                    android:hint="Password"
                     android:inputType="textPassword" />
 
             </RelativeLayout>
@@ -84,12 +88,28 @@
                 android:padding="10dp">
 
                 <EditText
+                    android:textColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
                     android:hint="Confirm password"
+                    android:inputType="textPassword" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginEnd="30dp"
-                    android:inputType="textPassword"  />
+                    android:hint="Email" />
 
             </RelativeLayout>
 
@@ -99,26 +119,13 @@
                 android:padding="10dp">
 
                 <EditText
+                    android:textColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
                     android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp">
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
                     android:hint="Phone number"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginEnd="30dp"
-                    android:inputType="number"/>
+                    android:inputType="number" />
 
             </RelativeLayout>
 
@@ -155,8 +162,8 @@
                     android:layout_height="wrap_content"
                     android:layout_toEndOf="@id/sign_in_hint"
                     android:paddingStart="10dp"
-                    android:text="Sign in"
-                    android:textColor="@color/white"/>
+                    android:text="@string/sign_in_link"
+                    android:textColor="@color/orange" />
 
             </RelativeLayout>
         </LinearLayout>

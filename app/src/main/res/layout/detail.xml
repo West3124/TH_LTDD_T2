@@ -3,10 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@drawable/home_background">
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tv_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
@@ -27,7 +28,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/tv_weight"
+        android:id="@+id/tv_class"
         android:textSize="24sp"
         android:text="Rarity"
         android:layout_width="match_parent"

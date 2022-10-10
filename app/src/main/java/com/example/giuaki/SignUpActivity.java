@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -24,6 +25,8 @@ public class SignUpActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent home = new Intent(SignUpActivity.this, HomeActivity.class);
+                EditText username = (EditText) findViewById(R.id.edtUsername);
+                home.putExtra("username", username.getText().toString().trim());
                 SignUpActivity.this.startActivity(home);
             }
         });
